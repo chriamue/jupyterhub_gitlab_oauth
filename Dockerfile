@@ -13,4 +13,4 @@ RUN /opt/conda/bin/conda install -yq psycopg2=2.7 && \
 COPY ./userlist /srv/jupyterhub/userlist
 COPY ./jupyterhub_config.py /srv/jupyterhub/jupyterhub_config.py
 
-CMD ['jupyterhub', '-f', '/srv/jupyterhub/jupyterhub_config.py']
+CMD ["jupyterhub", "-f", "/srv/jupyterhub/jupyterhub_config.py"]
